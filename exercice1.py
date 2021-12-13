@@ -1,3 +1,11 @@
+'''
+Premier jour Python
+Exercice :
+    - variable
+    - string
+    - number
+'''
+
 # Variable
 
 ma_premiere_varaible = "Salut le monde !"
@@ -53,6 +61,6 @@ def aritmetique2(a, b) :
     print("Le resultat de {} * {} est {}".format(a, b, a*b))
     print("Le resultat de {} / {} est {}".format(a, b, a/b))
     print("Le resultat de {} % {} est {}".format(a, b, a%b))
-    print("Le resultat de {} ** {} est {}".format(a, b, a**b))
+    print("Le resultat de {} puissance {} est {}".format(a, b, a**b))
     
 aritmetique2(2,3)
