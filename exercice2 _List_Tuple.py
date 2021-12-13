@@ -1,4 +1,4 @@
-###################### List and Tuple ######################
+###################### List ######################
 
 ### Introducing list ###
 
@@ -288,13 +288,62 @@ print(phrase_mot)
 
 # Strings as Lists - Sentence Slices
 
+phrase = "J'aime le chocolat"
+
+first_phrase = phrase[:5]
+middle_phrase = phrase [5:11]
+end_phrase = phrase[10:]
+
+print(first_phrase)
+print(middle_phrase)
+print(end_phrase)
+
 # Strings as Lists - Finding Python
+
+phrase = "Python est un serpent, mais python est aussi un langage de programmation"
+
+print("Python" in phrase)
+print(phrase.lower().find("python"))
+print(phrase.rfind("python"))
+print(phrase.lower().count("python"))
+print(phrase.split(" "))
+print(phrase.lower()..replace("python", "ruby"))
 
 ### Challenges ###
 
+ADN = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+
+ADN_liste = []
+for letters in ADN:
+    ADN_liste.append(letters)
 
 
-### Tuples ###
+print("il y a {} Adenine, {} Thymine, {} Cytosine, {} Guanine".format(ADN_liste.count("A"), ADN_liste.count("T"), ADN_liste.count("C"), ADN_liste.count("G")))
+
+ARN = []
+for i in ADN_liste:
+    if i == "A" or i == "C" or i == "G":
+        ARN.append(i)
+    else:
+        ARN.append("U")
+
+print(ARN)
+
+ADN_complementaire = []
+for i in ADN_liste:
+    if i == "A":
+        ADN_complementaire.append("T")
+    elif i == "T":
+        ADN_complementaire.append("A")
+    elif i == "C":
+        ADN_complementaire.append("G")
+    else :
+        ADN_complementaire.append("C")
+
+print(ADN_complementaire)
+
+
+###################### Tuple ######################
 
 # Tuples - Gymnast Scores
 
