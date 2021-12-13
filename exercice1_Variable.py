@@ -1,10 +1,3 @@
-'''
-Premier jour Python
-Exercice :
-    - variable
-    - string
-    - number
-'''
 
 # Variable
 

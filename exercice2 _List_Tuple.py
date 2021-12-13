@@ -249,16 +249,62 @@ for i in number:
 
 # List Comprehensions - Awesomeness
 
+nom = ["Dean", "Sam", "Castiel", "Crowley", "Amara"]
 
-
+awesome = []
+for i in nom:
+    awesome.append(i + " is awesome !!")
+    
+for i in awesome:
+    print(i)
 
 
 # List Comprehensions - Working Backwards
 
+nombre = range(1,11)
+
+for i in nombre:
+    print(i + 13)
+
 
 ### Strings as Lists ###
 
+# Strings as Lists - Listing a Sentence
+
+phrase = "J'aime le chocolat"
+
+for letter in phrase :
+    print(letter)
+
+# Strings as Lists - Sentence List
+
+phrase = "J'aime le chocolat"
+
+phrase_lettre = list(phrase)
+print(phrase_lettre)
+
+phrase_mot = phrase.split(" ")
+print(phrase_mot)
+
+# Strings as Lists - Sentence Slices
+
+# Strings as Lists - Finding Python
+
+### Challenges ###
+
+
+
 ### Tuples ###
+
+# Tuples - Gymnast Scores
+
+# Tuples - Revision with Tuples
+
 ### Coding Styles: PEP 8 ###
+
+# Coding Styles: PEP 8 - Skim PEP 8
+
+# Coding Styles: PEP 8 - Implement PEP 8
+
 ### Overall Challenges ###
 
