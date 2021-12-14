@@ -223,9 +223,12 @@ while i < 5 :
     argent.append(random.randint(0,500))
     i = i + 1
     
-print("The fattest wallet has {}$ value in it".format(max(argent)))
-print("The skinniest wallet has {}$ value in it".format(min(argent)))
-print("All together, these wallets have {}$ value in them".format(sum(argent)))
+print("The fattest wallet has {}$ value in it"\
+    .format(max(argent)))
+print("The skinniest wallet has {}$ value in it"\
+    .format(min(argent)))
+print("All together, these wallets have {}$ value in them"\
+    .format(sum(argent)))
 
 ### List Comprehensions ###
 
@@ -300,18 +303,21 @@ print(end_phrase)
 
 # Strings as Lists - Finding Python
 
-phrase = "Python est un serpent, mais python est aussi un langage de programmation"
+phrase = "Python est un serpent, mais python est \
+    aussi un langage de programmation"
 
 print("Python" in phrase)
 print(phrase.lower().find("python"))
 print(phrase.rfind("python"))
 print(phrase.lower().count("python"))
 print(phrase.split(" "))
-print(phrase.lower()..replace("python", "ruby"))
+print(phrase.lower().replace("python", "ruby"))
+
 
 ### Challenges ###
 
-ADN = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+ADN = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTC\
+    TCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
 
 ADN_liste = []
 for letters in ADN:
@@ -347,7 +353,21 @@ print(ADN_complementaire)
 
 # Tuples - Gymnast Scores
 
+score = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+print("The lowest possible score is {}".format(min(score)))
+print("The highest possible score is {}".format(max(score)))
+
+for i in score:
+    print("A judge can give a gymnast {} points".format(i))
+
 # Tuples - Revision with Tuples
+
+careers = ["programmeur", "professeur", "conducteur",
+           "medecin", "journaliste", "garagiste"]
+
+for i in careers:
+    print("original order : %s" % i)
 
 ### Coding Styles: PEP 8 ###
 
