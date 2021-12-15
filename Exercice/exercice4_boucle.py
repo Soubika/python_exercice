@@ -53,3 +53,18 @@ while len(gauss_addition) > 0:
     somme = somme + pop_first + pop_final
     
 print(somme)
+
+## Version fonction recursive :
+
+
+
+def gauss_recursif(liste_nombre):
+    if len(liste_nombre) == 0:
+        return 0
+    elif len(liste_nombre) == 1:
+        return liste_nombre.pop()
+    else :
+        return liste_nombre.pop(0) + liste_nombre.pop() + gauss_recursif(liste_nombre)
+
+nombre = list(range(1,101))
+print(gauss_recursif(nombre))
