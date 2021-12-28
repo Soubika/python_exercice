@@ -122,9 +122,41 @@ for name, elevation in sorted(mountains.items()):
 
 # Mountain Heights 3
 
+mountains = {
+    "Everest" : [8848, 29028],
+    "Aconcagua" : [6959, 22831],
+    "Denali" : [6190, 20308],
+    "Kilimandjaro" : [5892, 19330],
+    "Elbrouz" : [5892, 19330]
+    }
+
+
+for montain in mountains.keys():
+    print(montain)
+
+
+for montain in mountains.values():
+    print(montain[0])
+
+for montain in mountains.values():
+    print(montain[1])
+
+for key, values in mountains.items():
+    print("{} is {} meters tall, or {} feet".format(key, values[0], values[1]))
 
 # Mountain Heights 4
 
+mountains = {
+    "Everest" : {'elevation': 8848, "range" : "Himalaya"},
+    "Aconcagua" : {'elevation': 6959, "range" : "Cordillère des Andes"},
+    "Denali" : {'elevation': 6190, "range" : "Chaîne d'Alaska"},
+    "Kilimandjaro" : {'elevation': 5892, "range" : "Vallée du Grand Rift"},
+    "Elbrouz" : {'elevation': 5892, "range" : "Caucase"},
+    }
+
+
+for k in mountains.keys():
+    print("name : {}".format(k))
 
 
 
